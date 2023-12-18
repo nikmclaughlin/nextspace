@@ -8,7 +8,7 @@ export default function NavMenu() {
   return (
     <nav className={styles.nav}>
       <Link href="/">
-        <Image src="/logo.svg" width={216} height={30} alt="Nextspace logo" />
+        <Image src="/logo.svg" width={216} height={30} alt="Nextspace logo" priority />
       </Link>
 
       <ul className={styles.links}>
