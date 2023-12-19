@@ -17,7 +17,7 @@ export default async function UserProfile({ params }: Props){
 
 
     return (
-        <div>
+        <main>
             <h1>{name}</h1>
             <Image
                 src={image ?? '/mememan.webp'}
@@ -27,6 +27,6 @@ export default async function UserProfile({ params }: Props){
             />
             <h3>Bio</h3>
             <p>{bio}</p>
-        </div>
+        </main>
     )
 }
