@@ -1,6 +1,6 @@
 'use client'
 
-export default function ProfileForm({ user }: any) {
+export function ProfileForm({ user }: any) {
   const updateUser = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
 
@@ -20,6 +20,8 @@ export default function ProfileForm({ user }: any) {
         'Content-Type': 'application/json',
       },
     })
+
+    await res.json()
   }
 
   return (
